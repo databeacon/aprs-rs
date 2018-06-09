@@ -1,0 +1,9 @@
+[package]
+name = "aprs"
+version = "0.1.0"
+authors = ["Dmitry Azovtsev <dmitry@azovtsev.com>"]
+description = "Automatic Position Reporting System (APRS) protocol definitions"
+documentation = "https://docs.rs/aprs/"
+repository = "https://github.com/azov/aprs-rs"
+license = "Apache-2.0"
+
