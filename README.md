@@ -13,3 +13,5 @@
 
 This crate defines Rust data types, traits, and symbols per 
 [APRS v1.01 specification](http://www.aprs.org/doc/APRS101.PDF).
+
+See [crate documentation](https://docs.rs/aprs/) for usage and details.

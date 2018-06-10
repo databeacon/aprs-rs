@@ -25,7 +25,8 @@ use std::borrow::Cow;
 use std::time::SystemTime;
 
 mod units;
-pub use units::{Feet, Knots, Degrees, Fahrenheits};
+pub use units::{Feet, Meters, Knots, MetersPerSecond, MilesPerHour, KilometersPerHour, 
+  Degrees, Fahrenheits, Celsius, Radians};
 
 // Latitude and logitude are technically also degrees, 
 // but in APRS packets latlng degrees and course degrees 
@@ -50,6 +51,11 @@ impl Position {
             longitude: lng,
             precision: Some(precision),
         }
+    }
+
+    pub fn set_precision(&mut self, precision : Feet) -> &mut Self {
+      self.precision = Some(precision);
+      self
     }
 }
 
@@ -233,3 +239,6 @@ pub trait Packet {
         self.position().and_then(|v| v.precision)
     }
 }
+
+// Floating point asserts for tests
+#[cfg(test)] #[macro_use] extern crate approx; 
