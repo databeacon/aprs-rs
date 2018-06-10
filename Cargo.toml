@@ -1,6 +1,6 @@
 [package]
 name = "aprs"
-version = "0.2.1"
+version = "0.3.0"
 authors = ["Dmitry Azovtsev <dmitry@azovtsev.com>"]
 description = "Automatic Position Reporting System (APRS) protocol definitions"
 documentation = "https://docs.rs/aprs/"

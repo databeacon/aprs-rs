@@ -31,6 +31,7 @@ pub use units::{Feet, Meters, Knots, MetersPerSecond, MilesPerHour, KilometersPe
 // Latitude and logitude are technically also degrees, 
 // but in APRS packets latlng degrees and course degrees 
 // use different ranges
+#[derive(Debug, Clone, Copy, PartialEq)]
 pub struct Position{
     pub latitude: f32,
     pub longitude: f32,
