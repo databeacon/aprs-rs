@@ -17,7 +17,7 @@
 //! replacements for each other.
 //!
 //! If you're looking for a compartible parser check out the 
-//! [`fap`](https://crates.io/crates/aprs-parser) crate, which is a 
+//! [`fap`](https://docs.rs/fap) crate, which is a 
 //! Rust wrapper around Tapio Aaltonen's 
 //! [`libfap`](http://www.pakettiradio.net/libfap/) library.
 //!
