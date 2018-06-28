@@ -58,6 +58,10 @@ impl Position {
       self.precision = Some(precision);
       self
     }
+
+    pub fn coordinates(&self) -> (f32, f32) {
+      (self.longitude, self.latitude)
+    }
 }
 
 #[derive(Debug, Clone, Eq, PartialEq)]
