@@ -6,6 +6,7 @@ description = "Automatic Position Reporting System (APRS) protocol definitions"
 documentation = "https://docs.rs/aprs/"
 repository = "https://github.com/azov/aprs-rs"
 license = "Apache-2.0"
+edition = "2024"
 
 [dev-dependencies]
-approx = "0.2.0"
+approx = "0.5.1"

@@ -1,4 +1,4 @@
-use Symbol;
+use crate::Symbol;
 
 pub fn from_table(table: u8, code: u8) -> Symbol {
   match (table, code) {
@@ -142,9 +142,9 @@ pub fn from_table(table: u8, code: u8) -> Symbol {
 
 #[cfg(test)]
 mod tests {
-    use Symbol;
-    use PRIMARY_SYMBOL_TABLE;
-    use ALT_SYMBOL_TABLE;
+    use crate::Symbol;
+    use crate::PRIMARY_SYMBOL_TABLE;
+    use crate::ALT_SYMBOL_TABLE;
 
     #[test]
     fn test_symbol_from_table() {
